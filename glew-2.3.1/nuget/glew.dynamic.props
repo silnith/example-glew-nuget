@@ -2,7 +2,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemDefinitionGroup>
 		<ClCompile>
-            <PreprocessorDefinitions>GLEW_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
             <!--
             The $(MSBuildThisFileDirectory) resolves to the location of this file, which is inside of the
             "build/native" directory inside of the NuGet package.  Therefore, we need to go up two directories
