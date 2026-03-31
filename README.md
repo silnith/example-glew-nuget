@@ -25,3 +25,16 @@ Since there is no SDK-style project for the library, using the standard document
 methods for creating NuGet packages will not work.  That is why the `*.nuspec` file
 was written by hand, and the package is created directly using `nuget pack ...`.
 This can be done without any Visual Studio project at all.
+
+## Static versus DLL
+
+Theoretically it could be possible to create a single NuGet package that can be
+controlled using build properties to switch between static and dynamic libraries.
+However, this would be confusing for end users, and would require them to hand-edit
+the build configurations of any project that wants to make use of GLEW.
+
+Instead, this demonstrates creating separate NuGet packages, one for the static
+library and one for the DLL.  This makes it trivial for any end user to find the
+library on NuGet.org, add it using the NuGet Package Manager included in Visual
+Studio, and build and run their project.  No editing of project files, no special
+properties, just add-and-run.
