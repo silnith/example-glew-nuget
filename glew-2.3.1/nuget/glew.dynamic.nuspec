@@ -73,7 +73,7 @@
         <file src="bin/Release/x64/glew32.dll" target="lib/native/x64/" />
         <file src="lib/Release/x64/glew32.lib" target="lib/native/x64/" />
         <!-- C and C++ header files go into the "include" directory in the NuGet package by convention. -->
-		<file src="include/" target="include/" />
-        <file src="doc/" target="doc/" />
+		<file src="include/" target="/" />
+        <file src="doc/" target="/" />
 	</files>
 </package>
