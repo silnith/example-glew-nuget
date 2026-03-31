@@ -51,8 +51,8 @@
         <!-- The targets and props files must be named for the NuGet package ID, just like this file.
         They must be placed in the "build/native" directory inside of the NuGet package in order for
         MSBuild to be able to use them. -->
-		<file src="glew.static.props" target="build/native/" />
-		<file src="glew.static.targets" target="build/native/" />
+		<file src="nuget/glew.static.props" target="build/native/" />
+		<file src="nuget/glew.static.targets" target="build/native/" />
         <!--
         The "lib" directory only has special meaning for managed code, it is not necessary for native code.
         
