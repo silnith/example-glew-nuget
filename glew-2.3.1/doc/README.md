@@ -29,7 +29,8 @@ if (GLEW_ARB_vertex_program)
 {
   /* It is safe to use the ARB_vertex_program extension here. */
   glGenProgramsARB(...);
-}```
+}
+```
 
 In GLEW 1.0.x, a global structure was used for this task. To ensure binary compatibility between releases, the struct was replaced with a set of variables.
 
